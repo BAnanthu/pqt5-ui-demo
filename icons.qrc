@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>static/images/icons8-close.svg</file>
+  </qresource>
+</RCC>
