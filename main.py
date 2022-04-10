@@ -10,9 +10,7 @@ from button import Switch
 class Ui(QtWidgets.QDialog):
     def __init__(self):
         super(Ui, self).__init__()
-        # uic.loadUi('pos/ui/pos.ui', self)
         ui_path = 'demo.ui'
-        #ui_path = os.path.join(settings.BASE_DIR, 'modal/ui/alert.ui')
         uic.loadUi(ui_path, self)
 
 
@@ -36,8 +34,6 @@ class Ui(QtWidgets.QDialog):
         self.Modal = self.findChild(QtWidgets.QFrame, 'Modal')
         self.shadow_main = QGraphicsDropShadowEffect(blurRadius=20, xOffset=0, yOffset=0)
         self.Modal.setGraphicsEffect(self.shadow_main)
-        # self.AlertMessage = self.findChild(QtWidgets.QLabel, 'AlertMessage')
-        # self.AlertMessage.setText(self.message)
         self.frame_27 = self.findChild(QtWidgets.QFrame, 'frame_27')
         self.frame_28 = self.findChild(QtWidgets.QFrame, 'frame_28')
         self.frame_62 = self.findChild(QtWidgets.QFrame, 'frame_62')
